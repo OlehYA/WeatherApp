@@ -50,7 +50,106 @@
                 Background="{StaticResource cs_Backgraund}"/>
         
         <Button Grid.Column="2"
-                Style="{StaticResource CloseButtonStyle}"/>
-        
+                Style="{StaticResource CloseButtonStyle}"
+                Click="Button_Click"/>
+
+        <StackPanel Grid.Row="0"
+                    Grid.ColumnSpan="3"
+                    Orientation="Horizontal"
+                    HorizontalAlignment="Center"
+                    Margin="0 40 0 0">
+
+            <Image Source="/Images/location.png"
+                   Height="25"
+                   HorizontalAlignment="Right"/>
+
+            <Label x:Name="lblCityName"
+                   Content="- - -"
+                   FontFamily="Roboto"
+                   FontSize="15"
+                   Foreground="{StaticResource cs_Text}"
+                   HorizontalAlignment="Left"/>
+        </StackPanel>
+
+        <StackPanel Grid.Row="1"
+                    Grid.ColumnSpan="3">
+
+            <Label x:Name="lblDigitalClock"
+                   FontSize="9"
+                   FontFamily="Roboto"
+                   Foreground="{StaticResource cs_BBackground}"
+                   HorizontalAlignment="Center"
+                   VerticalAlignment="Center"/>
+
+            <Border Margin="10"
+                    Background="{StaticResource cs_BBackground}"
+                    Height="100"
+                    Width="100"
+                    CornerRadius="10"
+                    Opacity="0.75">
+
+                <Image x:Name="imgWeatherIcon"
+                       Height="80"
+                       Width="80"
+                       SnapsToDevicePixels="True"/>
+
+            </Border>
+
+            <Label x:Name="lblCondition"
+                   Content="- - -"
+                   FontFamily="Roboto"
+                   FontSize="10"
+                   Foreground="{StaticResource cs_Text2}"
+                   HorizontalAlignment="Center"/>
+
+        </StackPanel>
+
+        <StackPanel Grid.Row="2"
+                    Margin="10">
+
+            <Image Source="/Images/temperature.png"
+                   Height="30"/>
+
+            <Label x:Name="lblTemperature"
+                   Content="- - -"
+                   FontFamily="Roboto"
+                   FontSize="11"
+                   Foreground="{StaticResource cs_Text}"
+                   HorizontalAlignment="Center"/>
+
+        </StackPanel>
+
+        <StackPanel Grid.Row="2"
+                    Grid.Column="1"
+                    Margin="10">
+
+            <Image Source="/Images/windy.png"
+                   Height="30"/>
+
+            <Label x:Name="lblWindSpeed"
+                   Content="- - -"
+                   FontFamily="Roboto"
+                   FontSize="11"
+                   Foreground="{StaticResource cs_Text}"
+                   HorizontalAlignment="Center"/>
+
+        </StackPanel>
+
+        <StackPanel Grid.Row="2"
+                    Grid.Column="2"
+                    Margin="10">
+
+            <Image Source="/Images/humidity.png"
+                   Height="30"/>
+
+            <Label x:Name="lblhumidity"
+                   Content="- - -"
+                   FontFamily="Roboto"
+                   FontSize="11"
+                   Foreground="{StaticResource cs_Text}"
+                   HorizontalAlignment="Center"/>
+
+        </StackPanel>
+
     </Grid>
 </Window>
