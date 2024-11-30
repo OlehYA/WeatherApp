@@ -5,8 +5,52 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WeatherApp"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="425" Width="250"
+        WindowStartupLocation="CenterScreen"
+        WindowStyle="None"
+        AllowsTransparency="True"
+        Background="Transparent"
+        MouseDown="Window_MouseDown">
+    
     <Grid>
 
+        <Grid.RowDefinitions>
+            <RowDefinition Height="70"/>
+            <RowDefinition Height="160"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="120"/>
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <Border Width="250"
+                Height="425"
+                CornerRadius="20"
+                Background="{StaticResource cs_Backgraund}"
+                BorderBrush="{StaticResource cs_BorderBrush}"
+                BorderThickness="3"
+                Grid.RowSpan="4"
+                Grid.ColumnSpan="3"/>
+        
+        <Border Grid.Row="0"
+                Grid.RowSpan="3"
+                Grid.ColumnSpan="3"
+                Margin="10"
+                CornerRadius="20 20 0 0"
+                Background="{StaticResource cs_Backgraund}"/>
+
+        <Border Grid.Row="4"
+                Grid.ColumnSpan="3"
+                Margin="10 0 10 10"
+                CornerRadius="0 0 20 20"
+                Background="{StaticResource cs_Backgraund}"/>
+        
+        <Button Grid.Column="2"
+                Style="{StaticResource CloseButtonStyle}"/>
+        
     </Grid>
 </Window>

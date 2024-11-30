@@ -23,12 +23,12 @@
                     </Grid>
                     <ControlTemplate.Triggers>
                         <Trigger Property="IsMouseOver" Value="True">
-                            <Setter Property="Background" TargetName="border" Value="{StaticResource cs_BoederBrush}"/>
+                            <Setter Property="Background" TargetName="border" Value="{StaticResource cs_BorderBrush}"/>
                         </Trigger>
                         <Trigger Property="IsPressed" Value="True">
                             <Setter Property="BorderThickness" TargetName="border" Value="2"/>
                             <Setter Property="BorderBrush" TargetName="border" Value="{StaticResource cs_Text3}"/>
-                            <Setter Property="Background" Value="{StaticResource cs_BoederBrush}"/>
+                            <Setter Property="Background" Value="{StaticResource cs_BorderBrush}"/>
                         </Trigger>
                     </ControlTemplate.Triggers>
                 </ControlTemplate>

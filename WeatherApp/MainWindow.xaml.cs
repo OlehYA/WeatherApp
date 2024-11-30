@@ -24,5 +24,10 @@ namespace WeatherApp
         {
             InitializeComponent();
         }
+
+        private void Button_Click()
+        {
+
+        }
     }
 }
