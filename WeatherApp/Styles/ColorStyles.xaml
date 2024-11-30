@@ -5,7 +5,7 @@
         <GradientStop Color="#FF3904A9" Offset="1.0"/>
     </LinearGradientBrush>
 
-    <SolidColorBrush x:Key="cs_BoederBrush" Color="#FFB2620A"/>
+    <SolidColorBrush x:Key="cs_BorderBrush" Color="#FFB2620A"/>
 
     <SolidColorBrush x:Key="cs_BBackground" Color="#FFEDDCEB" Opacity="0.5"/>
 
