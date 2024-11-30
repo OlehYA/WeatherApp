@@ -151,5 +151,18 @@
 
         </StackPanel>
 
+        <StackPanel Grid.Row="3"
+                    Grid.ColumnSpan="3"
+                    Margin="0 20 0 0">
+
+            <TextBlock Height="35"
+                       Width="200"
+                        x:Name="txtCityName"
+                       Style="{StaticResource tbox_Txt}"
+                       HorizontalAlignment="Center"
+                       Tag="Pla"/>
+
+        </StackPanel>
+
     </Grid>
 </Window>
