@@ -79,7 +79,8 @@
                    FontFamily="Roboto"
                    Foreground="{StaticResource cs_BBackground}"
                    HorizontalAlignment="Center"
-                   VerticalAlignment="Center"/>
+                   VerticalAlignment="Center"
+                   Content="{Binding Path=Now, StringFormat='{}{0:hh:mm:ss tt}'}"/>
 
             <Border Margin="10"
                     Background="{StaticResource cs_BBackground}"
@@ -155,12 +156,22 @@
                     Grid.ColumnSpan="3"
                     Margin="0 20 0 0">
 
-            <TextBlock Height="35"
+            <TextBox Height="35"
                        Width="200"
-                        x:Name="txtCityName"
+                       x:Name="txtCityName"
                        Style="{StaticResource tbox_Txt}"
                        HorizontalAlignment="Center"
-                       Tag="Pla"/>
+                       Tag="Please enter a city name!"/>
+
+            <Button Height="30"
+                    Width="200"
+                    Margin="10"
+                    x:Name="btnGetWeather"
+                    Content="Get Weather"
+                    Click="btnGetWeather_Click"
+                    FontFamily="Roboto"
+                    FontSize="11"
+                    Style="{StaticResource RoundedButtonsStyle}"/>
 
         </StackPanel>
 

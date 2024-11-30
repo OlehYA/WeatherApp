@@ -38,9 +38,8 @@
     <!--#endregion-->
     
     <!--#region Close Button-->
-
-    <ImageBrush x:Key="close_act" ImageSource="/Images/closered.png"/>
-    <ImageBrush x:Key="close_pas" ImageSource="/Images/closewhite.png"/>
+    <ImageBrush x:Key="close_pas" ImageSource="D:\Книга С#\MyProject\WeatherApp\WeatherApp\Images\closewhite.png"/>
+    <ImageBrush x:Key="close_act" ImageSource="D:\Книга С#\MyProject\WeatherApp\WeatherApp\Images\closered.png"/>
 
     <Style x:Key="CloseButtonStyle" TargetType="{x:Type Button}">
         <Setter Property="Height" Value="25"/>
